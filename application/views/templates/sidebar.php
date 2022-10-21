@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="<?php echo base_url() ?>assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Sistem Penjualan</span>
+      <span class="brand-text font-weight-light">Info Sepakbola</span>
     </a>
 
     <!-- Sidebar -->
@@ -36,33 +36,20 @@
                with font-awesome or any other icon font library -->
          
               <li class="nav-item">
-                <a href="<?php echo base_url('index.php/penjualan/index'); ?>" class="nav-link">
+                <a href="<?php echo base_url('index.php/klub/index'); ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>Dashboard </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url('index.php/penjualan/index'); ?>" class="nav-link">
+                <a href="<?php echo base_url('index.php/klub/index'); ?>" class="nav-link">
                 <i class="fa fa-user"></i>
-                  <p>Data Penjualan</p>
+                  <p>Tabel Klub</p>
                 </a>
               </li>
               
               <br>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-sign-out-alt"></i>
-              <p>
-                Logout
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <p>Logout</p>
-                </a>
-              </li>
+         
             
           
         </ul>

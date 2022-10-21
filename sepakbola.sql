@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2022 at 04:20 PM
+-- Generation Time: Oct 21, 2022 at 07:48 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -18,42 +18,43 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test_qtasnim`
+-- Database: `sepakbola`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_penjualan`
+-- Table structure for table `tb_klub`
 --
 
-CREATE TABLE `tb_penjualan` (
+CREATE TABLE `tb_klub` (
   `id` int(11) NOT NULL,
-  `nama_barang` varchar(100) NOT NULL,
-  `stok` varchar(12) NOT NULL,
-  `jumlah_terjual` varchar(12) NOT NULL,
-  `tgl_transaksi` date NOT NULL,
-  `jenis_barang` varchar(50) NOT NULL
+  `nama_klub` varchar(50) NOT NULL,
+  `kota` varchar(40) NOT NULL,
+  `main` varchar(15) NOT NULL,
+  `menang` varchar(15) NOT NULL,
+  `seri` varchar(15) NOT NULL,
+  `kalah` varchar(15) NOT NULL,
+  `poin` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_penjualan`
+-- Dumping data for table `tb_klub`
 --
 
-INSERT INTO `tb_penjualan` (`id`, `nama_barang`, `stok`, `jumlah_terjual`, `tgl_transaksi`, `jenis_barang`) VALUES
-(1, 'Kopi', '100', '10', '2022-10-11', 'Konsumsi'),
-(3, 'Teh', '100', '19', '2022-09-07', 'Konsumsi'),
-(4, 'Pasta gigi', '50', '16', '2022-09-21', 'Konsumsi'),
-(5, 'Celana panjang', '90', '28', '2022-10-22', 'Konsumsi');
+INSERT INTO `tb_klub` (`id`, `nama_klub`, `kota`, `main`, `menang`, `seri`, `kalah`, `poin`) VALUES
+(1, 'Persib', 'Bandung', '2', '1', '1', '0', '4'),
+(3, 'Persija', 'Jakrta', '2', '1', '0', '1', '3'),
+(5, 'Arema', 'Malang', '3', '3', '0', '0', '9');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tb_penjualan`
+-- Indexes for table `tb_klub`
 --
-ALTER TABLE `tb_penjualan`
+ALTER TABLE `tb_klub`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -61,9 +62,9 @@ ALTER TABLE `tb_penjualan`
 --
 
 --
--- AUTO_INCREMENT for table `tb_penjualan`
+-- AUTO_INCREMENT for table `tb_klub`
 --
-ALTER TABLE `tb_penjualan`
+ALTER TABLE `tb_klub`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 

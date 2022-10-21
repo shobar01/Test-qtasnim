@@ -1,14 +1,14 @@
 <?php
 
-class M_penjualan extends CI_Model {
+class M_klub extends CI_Model {
     public function tampil_data ()
     {
-         return $this->db->get('tb_penjualan');
+         return $this->db->get('tb_klub');
     }
 
     public function input_data ($data)
     {
-         $this->db->insert('tb_penjualan', $data);
+         $this->db->insert('tb_klub', $data);
     }
 
     public function hapus_data($where, $table)
@@ -30,7 +30,7 @@ class M_penjualan extends CI_Model {
     }
 
     public function detail_data($id = NULL){
-         $query = $this->db->get_where('tb_penjualan', array('id' => $id))->row();
+         $query = $this->db->get_where('tb_klub', array('id' => $id))->row();
          return $query;
     }
     
